@@ -168,25 +168,6 @@ fn get_segments(
     if urz > z { case |= 4; }
     if ulz > z { case |= 8; }
 
-    // if we're at the boundary of the image, consider solid squares as
-    // borders in order to close paths
-    case = match case {
-        15 => {
-            if x == 0 {
-                6
-            } else if x == width - 2 {
-                9
-            } else if y == 0 {
-                3
-            } else if y == height - 2 {
-                12
-            } else {
-                case
-            }
-        }
-        _ => case,
-    };
-
     let x = x as f32;
     let y = y as f32;
 
