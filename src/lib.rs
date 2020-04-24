@@ -133,7 +133,6 @@ fn march<'a>(field: &Field<'a>, z: i16) -> Vec<Line> {
         .for_each(|((x, y, ulz, urz), (blz, brz))| {
             let (a, b) = get_segments(
                 (x, y),
-                (width, height),
                 (*ulz, *urz),
                 (*blz, *brz),
                 z
@@ -155,7 +154,6 @@ fn march<'a>(field: &Field<'a>, z: i16) -> Vec<Line> {
 #[inline(always)]
 fn get_segments(
     (x, y): (usize, usize),
-    (width, height): (usize, usize),
     (ulz, urz): (i16, i16),
     (blz, brz): (i16, i16),
     z: i16
@@ -218,7 +216,6 @@ fn march_parallel<'a>(field: &Field<'a>, z: i16) -> Vec<Line> {
             let brz = next_row_zs.get(cur_x + 1)?;
             Some(get_segments(
                 (cur_x, cur_y),
-                (width, height),
                 (*ulz, *urz),
                 (*blz, *brz),
                 z
