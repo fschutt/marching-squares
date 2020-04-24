@@ -4,6 +4,8 @@ This crate provides an (optionally parallelizable)
 marching squares algorithm to generate isolines from
 a heightmap of `Vec<Vec<i16>>` values.
 
+Adapted from [https://github.com/d-dorazio/marching-squares](https://github.com/d-dorazio/marching-squares)
+
 ## Warning
 
 - The returned lines may only have two points.
