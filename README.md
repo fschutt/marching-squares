@@ -13,7 +13,6 @@ Adapted from [https://github.com/d-dorazio/marching-squares](https://github.com/
 ## Example
 
 ```rust
-#
 use marching_squares::{Field, Point};
 
 fn main() {

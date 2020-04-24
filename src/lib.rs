@@ -12,7 +12,6 @@
 //!
 //! ```rust
 //! # extern crate marching_squares;
-//! #
 //! use marching_squares::{Field, Point};
 //!
 //! fn main() {
