@@ -1,6 +1,6 @@
 [package]
 name = "marching-squares"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Daniele D'Orazio <d.dorazio96@gmail.com>", "Felix Schütt <felix.schuett@maps4print.com>"]
 edition = "2018"
 license = "MIT"
